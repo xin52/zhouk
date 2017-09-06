@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script src="js/vue.min.js"></script>
+<style>
+	.class1{
+		background: red;
+		color: blue;
+	}
+</style>
+<body>
+	<div id="app">
+		<!-- <p>{{message}}</p>
+		<div v-html="message"></div>
+		<label for="r1">修改颜色<input type="checkbox" v-model="class1" id="r1"></label><br><br>
+		<div v-bind:class="{'class1':class1}">你好</div>
+		<p v-if="seen">现在你看到我了</p>
+		<template v-if="ok">
+			<h1>菜鸟教程</h1>
+			<p>学的不仅是技术，更是梦想！</p>
+		            <p>哈哈哈，打字辛苦啊！！！</p>
+		</template>
+			
+		<div><a v-bind:href="url">菜鸟教程</a></div>
+		<h4>{{message}}</h4>
+		<input type="text" v-model="message"> -->
+		<!-- <p>{{message}}</p>
+		<button v-on:click="fns">反转字符串</button> -->
+
+		<!-- {{ message | capitalize }} -->
+		<ol>
+			<li v-for="item in sit">
+				{{item.name}}
+			</li>
+		</ol>
+		
+		
+	</div>
+	<!-- <div id="app">
+	    <p>{{ message }}</p>
+	    <input v-model="message"> -->
+</div>
+	
+	<script>
+     new Vue({
+     	el:"#app",
+     	data:{
+     		//message: 'runoob'
+     		//class1:false
+     		//seen:false,//隐藏
+     		//ok:true//显示
+     		//url:"http://www.runoob.com"
+     		sit:[
+               {name:"lo"},
+               {name:"lj"},
+               {name:"gh"},
+               {name:"uj"}
+
+           
+     		]
+     	}
+     	/*methods:{
+     		fns:function(){
+     			 this.message = this.message.split('').reverse().join('')
+     		}
+     	}*/
+     	/*filters: {
+         capitalize: function (value) {
+      if (!value) return ''
+      value = value.toString()
+      return value.charAt(0).toUpperCase() + value.slice(1)
+    }
+  }*/
+
+
+     })
+	</script>
+</body>
+</html>
